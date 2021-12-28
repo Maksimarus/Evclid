@@ -30,8 +30,10 @@ body {
 }
 
 .container {
-	max-width: 1770px;
+	width: 100%;
+	max-width: 1800px;
 	margin: 0 auto;
+	padding: 0px 15px;
 }
 
 :root {
@@ -43,7 +45,6 @@ body {
 .wrapper	{
 	display: flex;
 	flex-direction: column;
-	padding: 0px 15px;
 }
 .main {
 	flex: 1 1 auto;
@@ -71,6 +72,21 @@ body {
 }
 .menu__list {
 	display: flex;
+}
+.menu-list-burger {
+	position: absolute;
+	z-index: 100;
+	top: 0;
+	left: 20%;
+	bottom: 0;
+	width: 200px;
+	padding: 40px;
+	background-color: gray;
+	transition: transform 1s ease-in-out;
+	transform: translateX(-500%);
+}
+.is-active {
+	transform: none;
 }
 .menu__item {
 	margin-right: 85px;
@@ -749,7 +765,7 @@ body {
 
 @media (max-width: 320px) {
 	.container {
-		max-width: 290px;
+		max-width: 320px;
 	}
 	.header {
 		height: 60px;
@@ -882,7 +898,7 @@ body {
 		margin-bottom: 60px;
 	}
 	.input {
-		width: 100%;
+		width: 290px;
 		font-size: 14px;
 	}
 	.footer {
@@ -891,12 +907,17 @@ body {
 	.footer-content {
 		padding: 32px 0px;
 	}
+	.footer-form {
+		order: 1;
+	}
+	.footer-nav {
+		order: 2;
+	}
 	.footer-buttons {
-		display: block;
+		flex-direction: column;
 	}
 	.form-btn {
 		display: block;
-		margin: 0px 70px 11px 70px;
 	}
 	.chechbox {
 		margin-left: 5px;

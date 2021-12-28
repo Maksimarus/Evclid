@@ -1,3 +1,5 @@
 window.addEventListener('DOMContentLoaded', function() {
-	document.querySelector('.menu__link').style.color = 'blue'
+	document.querySelector('#burger').addEventListener('click', function() {
+		document.querySelector('#menu').classList.toggle('is-active')	
+	})
 })
