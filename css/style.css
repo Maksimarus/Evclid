@@ -5,6 +5,10 @@ a {
 	color: inherit;
 	text-decoration: none;
 }
+button {
+	background-color: transparent;
+	border: none;
+}
 nav {
 	margin: 0;
 	padding: 0;
@@ -63,29 +67,30 @@ body {
 	width: 224px;
 	margin-right: auto;
 }
-.logo-link {
-
-}
-.header__menu {
-}
-.menu {
-
-}
 .menu__list {
 	display: flex;
 }
 .menu-list-burger {
 	position: absolute;
 	z-index: 100;
-	right: 0;
-	width: 500px;
-	padding: 40px;
-	background-color: var(--orange);
-	transition: opacity .5s ease-in-out;
-	opacity: 0;
+	top: 120px;
+	left: 0;
+	max-width: 420px;
+	max-height: 768px;
+	padding: 0 106px 217px 50px;
+	background-color: white;
+	transition: transform .5s ease-in-out;
+	transform: translateX(-101%);
+}
+.burger__item {
+	margin-bottom: 60px;
+}
+.burger__link {
+	font-size: 24px;
+	font-weight: 700;
 }
 .is-active {
-	opacity: 1;
+	transform: none;
 }
 .menu__item {
 	margin-right: 85px;
@@ -150,8 +155,11 @@ body {
 .swiper {
 	max-width: 1770px;
 }
+.swiper-wrapper {
+	
+}
 .swiper-slide {
-	background-size: contain;
+	background-size: cover;
 	padding: 100px 80px;
 }
 .swiper-slide__1 {
@@ -329,11 +337,20 @@ body {
 .section-work__content {
 	display: flex;
 }
+.tab-content {
+	display: none;
+	margin-top: 30px;
+}
+.tab-content-active {
+	display: block;
+}
+
 .section-work__content__left {
 	margin-right: 142px;
 }
 .work-left {
 }
+
 .work-left__title {
 	font-size: 24px;
 	font-weight: 700;
@@ -356,6 +373,7 @@ body {
 }
 .section-work__content__right {
 	flex: 1 0 50%;
+	max-width: 870px;
 }
 .work-right {
 }
@@ -381,6 +399,9 @@ body {
 .ui-accordion .ui-accordion-content {
 	padding: 0;
 }
+.ui-accordion .ui-accordion-header {
+	margin-top: 0;
+}
 .onclick {
 	height: 111px;
 	padding: 20px 0 !important;
@@ -388,7 +409,10 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	background-color: transparent;
-	border: none;
+	border-left: none;
+	border-right: none;
+}
+.onclick:nth-child(even) {
 	border-top: 1px solid #CACACA;
 	border-bottom: 1px solid #CACACA;
 }
@@ -634,25 +658,24 @@ body {
 	display: none;
 	cursor: pointer;
 }
+.burger-is-active {
+	display: block;
+}
+.line-burger-active .burger__line:nth-of-type(1){
+	transform: rotate(45deg) translateY(8px) translateX(3px);
+}
+.line-burger-active .burger__line:nth-of-type(2) {
+	transform: scale(0);
+}
+.line-burger-active .burger__line:nth-of-type(3){
+	transform: rotate(-45deg) translateY(-10px) translateX(6px);
+}
 .burger__line {
 	width: 36px;
 	height: 5px;
 	background-color: #000;
 	margin: 5px 0;
 	transition: transform .5s ease;
-}
-.burger__line:active {
-	margin: 0;
-}
-.burger__line_2:active {
-	display: none;
-}
-.burger__line_1:active {
-	transform: rotate(45deg);
-	transform: translateY(10px);
-}
-.burger__line_1:active {
-	transform: rotate(-45deg);
 }
 @media (max-width: 1024px) {
 	.container {
@@ -712,13 +735,7 @@ body {
 		flex: 1 1 50%;
 		margin-right: 50px;
 	}
-	.section-work__content__right {
-		flex: 1 1 auto;
-		background-image: url("/img/work1024px.jpg");
-		background-size: cover;
-	}
 	.work-right__img {
-		opacity: 0;
 		width: 437px;
 		height: 689px;
 	}
@@ -800,8 +817,6 @@ body {
 	}
 	.section-work__content__right {
 		flex: 1 1 auto;
-		background-image: url("/img/work.jpg");
-		background-size: cover;
 		margin-bottom: 38px;
 	}
 	.work-right__img {
@@ -888,6 +903,11 @@ body {
 	}
 }
 @media (max-width: 410px) {
+.section-work__item:not(:last-child) {
+		margin-right: 25px;
+	}
+}
+@media (max-width: 410px) {
 	.section-hero__title {
 		font-size: 30px;
 	}
@@ -971,11 +991,6 @@ body {
 		border: none;
 		padding: 0;
 	}
-	.content-right__item::before {
-		width: 64px;
-		height: 49px;
-		background-size: contain;
-	}
 	.section-aboutUs {
 		margin-bottom: 60px;
 	}
@@ -988,8 +1003,11 @@ body {
 	.section-work__title {
 		margin-bottom: 16px;
 	}
+	.section-work__list_link {
+		min-height: 50px;
+	}
 	.section-work__item:not(:last-child) {
-		margin-right: 44px;
+		margin-right: 20px;
 	}
 	.section-work__list {
 		margin-bottom: 16px;
@@ -1012,6 +1030,7 @@ body {
 	.section-work__content__left {
 		margin-right: 0;
 		flex: 1 1 100%;
+		margin-top: 110px;
 	}
 	.onclick {
 		height: 105px;

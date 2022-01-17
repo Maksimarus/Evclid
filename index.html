@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 	<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
-	<link rel="stylesheet" href="/resources/demos/style.css">
+	<link  href="/resources/demos/style.css">
 	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 	<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
 	<link rel="stylesheet" href="/css/style.css">
@@ -40,7 +40,7 @@
 						</li>
 					</ul>
 				</nav>
-				<div id="burger" class="burger">
+				<div id="burger" class="burger ">
 					<div class="burger__line burger__line_1"></div>
 					<div class="burger__line burger__line_2"></div>
 					<div class="burger__line burger__line_3"></div>
@@ -76,28 +76,28 @@
 					<div class="swiper">
 						<!-- Additional required wrapper -->
 						<div class="swiper-wrapper">
-						  <!-- Slides -->
-						  <div class="swiper-slide swiper-slide__1">
-							<div class="section-hero__content">
-								<h1 class="section-hero__title">Проектные решения любой сложности</h1>
-								<p class="section-hero__description">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
-								<a href="" class="btn btn-color btn_section-hero">Заказать расчёт</a>
-						</div>
-						  </div>
-						  <div class="swiper-slide swiper-slide__2">
-							<div class="section-hero__content">
-								<h1 class="section-hero__title">Проектные решения любой сложности</h1>
-								<p class="section-hero__description">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
-								<a href="" class="btn btn-color btn_section-hero">Заказать расчёт</a>
-						</div>
-						  </div>
-						  <div class="swiper-slide swiper-slide__3">
-							<div class="section-hero__content">
-								<h1 class="section-hero__title">Проектные решения любой сложности</h1>
-								<p class="section-hero__description">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
-								<a href="" class="btn btn-color btn_section-hero">Заказать расчёт</a>
-						</div>
-						  </div>
+							<!-- Slides -->
+							<div class="swiper-slide swiper-slide__1">
+								<div class="section-hero__content">
+									<h1 class="section-hero__title">Проектные решения любой сложности</h1>
+									<p class="section-hero__description">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+									<a href="" class="btn btn-color btn_section-hero">Заказать расчёт</a>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide__2">
+								<div class="section-hero__content">
+									<h1 class="section-hero__title">Проектные решения любой сложности</h1>
+									<p class="section-hero__description">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+									<a href="" class="btn btn-color btn_section-hero">Заказать расчёт</a>
+								</div>
+							</div>
+							<div class="swiper-slide swiper-slide__3">
+								<div class="section-hero__content">
+									<h1 class="section-hero__title">Проектные решения любой сложности</h1>
+									<p class="section-hero__description">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+									<a href="" class="btn btn-color btn_section-hero">Заказать расчёт</a>
+								</div>
+							</div>
 						</div>
 						<!-- If we need pagination -->
 						<div class="swiper-pagination"></div>
@@ -105,7 +105,7 @@
 						<!-- If we need navigation buttons -->
 						<div class="swiper-button-prev"></div>
 						<div class="swiper-button-next"></div>
-					 </div>
+					</div>
 				</div>
 			</section>
 
@@ -157,34 +157,81 @@
 					<h2 class="section-title section-work__title">Как мы работаем</h2>
 					<ul class="section-work__list menu__list">
 						<li class="menu__item section-work__item">
-							<a href="" class="menu__link section-work__list_link">1 шаг</a>
+							<button class="menu__link section-work__list_link tabs_btn btn-reset" data-path="one">1 шаг</button>
 						</li>
 						<li class="menu__item section-work__item">
-							<a href="" class="menu__link section-work__list_link">2 шаг</a>
+							<button class="menu__link section-work__list_link tabs_btn btn-reset" data-path="two">2 шаг</button>
 						</li>
 						<li class="menu__item section-work__item">
-							<a href="" class="menu__link section-work__list_link">3 шаг</a>
+							<button class="menu__link section-work__list_link tabs_btn btn-reset" data-path="three">3 шаг</button>
 						</li>
 						<li class="menu__item section-work__item">
-							<a href="" class="menu__link section-work__list_link">4 шаг</a>
+							<button class="menu__link section-work__list_link tabs_btn btn-reset" data-path="four">4 шаг</button>
 						</li>
 					</ul>
-					<div class="section-work__content">
-						<div class="section-work__content__left work-left">
-							<div class="work-left__title">Проводим консультацию</div>
-							<p class="work-left__text">
-								Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
-							</p>
-							<a href="" class="btn btn-color work-left__btn_1">Подробнее</a>
-							<a href="" class="btn btn-mono work-left__btn_2">Договор</a>
+					<div class="tab-content tab-content-active" data-target="one">
+						<div class="section-work__content" >
+							<div class="section-work__content__left work-left">
+								<div class="work-left__title">Проводим консультацию</div>
+								<p class="work-left__text">
+									Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
+								</p>
+								<a href="" class="btn btn-color work-left__btn_1">Подробнее</a>
+								<a href="" class="btn btn-mono work-left__btn_2">Договор</a>
+							</div>
+							<div class="section-work__content__right work-right">
+								<img src="/img/work.jpg" alt="" class="work-right__img">
+							</div>
 						</div>
-						<div class="section-work__content__right work-right">
-							<img src="/img/work.jpg" alt="" class="work-right__img">
+					</div>
+					<div class="tab-content" data-target="two">
+						<div class="section-work__content">
+							<div class="section-work__content__left work-left">
+								<div class="work-left__title">Составляем смету</div>
+								<p class="work-left__text">
+									Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.
+								</p>
+								<a href="" class="btn btn-color work-left__btn_1">Подробнее</a>
+								<a href="" class="btn btn-mono work-left__btn_2">Договор</a>
+							</div>
+							<div class="section-work__content__right work-right">
+								<img src="/img/tab-2.jpg" alt="" class="work-right__img">
+							</div>
+						</div>
+					</div>
+					<div class="tab-content" data-target="three">
+						<div class="section-work__content">
+							<div class="section-work__content__left work-left">
+								<div class="work-left__title">Привлекаем подрядчиков</div>
+								<p class="work-left__text">
+									Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.
+								</p>
+								<a href="" class="btn btn-color work-left__btn_1">Подробнее</a>
+								<a href="" class="btn btn-mono work-left__btn_2">Договор</a>
+							</div>
+							<div class="section-work__content__right work-right">
+								<img src="/img/tab-3.jpg" alt="" class="work-right__img">
+							</div>
+						</div>
+					</div>
+					<div class="tab-content" data-target="four">
+						<div class="section-work__content">
+							<div class="section-work__content__left work-left">
+								<div class="work-left__title">Инспектируем все этапы работ</div>
+								<p class="work-left__text">
+									Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.
+								</p>
+								<a href="" class="btn btn-color work-left__btn_1">Подробнее</a>
+								<a href="" class="btn btn-mono work-left__btn_2">Договор</a>
+							</div>
+							<div class="section-work__content__right work-right">
+								<img src="/img/tab-4.jpg" alt="" class="work-right__img">
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<!-- ПЕРЕДЕЛАТЬ ОНКЛИК -->
+
 			<section class="section-faq">
 				<div class="container">
 					<h2 class="section-title section-faq__title">Часто задаваемые вопросы</h2>
