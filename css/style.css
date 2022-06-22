@@ -163,13 +163,13 @@ body {
 	padding: 100px 80px;
 }
 .swiper-slide__1 {
-	background: url("/img/hero-bg.jpg") center center no-repeat;
+	background: url(../img/hero-bg.jpg) center center no-repeat;
 }
 .swiper-slide__2 {
-	background: url("/img/hero-bg-2.jpg") left center no-repeat;
+	background: url(../img/hero-bg-2.jpg) left center no-repeat;
 }
 .swiper-slide__3 {
-	background: url("/img/hero-bg-3.jpg") right center no-repeat;
+	background: url(../img/hero-bg-3.jpg) right center no-repeat;
 }
 .section-hero__content {
 	max-width: 837px;
@@ -232,7 +232,7 @@ body {
 .aboutUs-content {
 }
 .aboutUs-content__left {
-	background: url("/img/worker.jpg") center no-repeat;
+	background: url(../img/worker.jpg) center no-repeat;
 	background-size: cover;
 	margin-right: 32px;
 	flex-basis: calc(50% - 16px);
